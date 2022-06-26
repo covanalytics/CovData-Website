@@ -57,7 +57,7 @@ This is a list of the major technologies, frameworks, and plug-ins that have bee
   - [ ] Provide Opportunities for Community Suggestions
 
 ## Contact
-Todd Sink, Ph.D - tsink@covingtonky.gov
+Todd Sink, Ph.D:  tsink@covingtonky.gov
 
 Project Link: [https://github.com/covanalytics/CovData-Website.git](https://github.com/covanalytics/CovData-Website.git))
 
