@@ -35,13 +35,15 @@ The City of Covington is a progressive and ethical government, and as part of th
 
 ### Built With
 
-This is a list of the major technologies and frameworks used to create the Open Data platform.
+This is a list of the major technologies, frameworks, and plug-ins that have been used to create the Open Data platform.
 
 * [HTML](https://html.spec.whatwg.org/multipage/#toc-references)
+* [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
 * [Angular](https://angular.io/)
-* 
+* [Ajax])(https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)
+* [DataTables.js](https://datatables.net/)
 
 
 
