@@ -61,7 +61,7 @@ Todd Sink, Ph.D:  tsink@covingtonky.gov
 
 Project Link: [https://github.com/covanalytics/CovData-Website.git](https://github.com/covanalytics/CovData-Website.git))
 
-## Acknowledgements
+## Acknowledgments
 
 * [Font Awesome](https://fontawesome.com/)
 * [Systems Insight, Inc.]()-- web domain and hosting support
