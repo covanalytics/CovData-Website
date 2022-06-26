@@ -53,6 +53,7 @@ This is a list of the major technologies, frameworks, and plug-ins that have bee
 - [X] Update Web Maps/Apps Section
 - [ ] Overhaul Dashboards
 - [ ] Add Quartlery Data Stories
+  - [ ] Provide Opportunities for Community Suggestions
 
 ## Contact
 
