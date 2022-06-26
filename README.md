@@ -63,7 +63,8 @@ Project Link: [https://github.com/covanalytics/CovData-Website.git](https://gith
 
 ## Acknowledgements
 
-
+* [Font Awesome](https://fontawesome.com/)
+* [Systems Insight, Inc.]()-- web domain and hosting support
 
 
 
