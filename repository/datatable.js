@@ -94,7 +94,7 @@ $(document).ready(function() {
         else {
             // Open this row
             row.child( format(row.data()) ).show();
-            tr.addClass('shown');
+            tr.addClass('shown')
         }
     } );
 });
