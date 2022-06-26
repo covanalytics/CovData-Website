@@ -34,7 +34,6 @@ The City of Covington is a progressive and ethical government, and as part of th
 ### Usage
 
 ### Built With
-
 This is a list of the major technologies, frameworks, and plug-ins that have been used to create the Open Data platform.
 
 * [HTML](https://html.spec.whatwg.org/multipage/#toc-references)
@@ -44,6 +43,10 @@ This is a list of the major technologies, frameworks, and plug-ins that have bee
 * [Angular](https://angular.io/)
 * [Ajax](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)
 * [DataTables.js](https://datatables.net/)
+* [R](https://www.r-project.org/)
+* [Google Drive](https://www.google.com/drive/)
+
+
 
 
 
