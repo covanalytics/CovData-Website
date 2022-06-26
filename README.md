@@ -23,12 +23,12 @@ The Data Hub can be accessed at [data.covingtonky.gov](http://data.covingtonky.g
 ![covdata](https://user-images.githubusercontent.com/24296075/175827245-980975ac-e992-4023-be4a-f026d26bb459.PNG)
 
 <!-- VISION STATEMENT-->
-## Vision
+### Vision
 Data-driven government begins with timely, reliable, consistent, high-quality data. Governing without data is like driving a car blindfolded. When we use data and analytics to make decisions, we take off the blindfolds and are able to improve our government operations and the services we provide. This ultimately leads to increased quality of life and work for Covington residents, employers, employees and visitors.
 
 <!-- MISSION STATEMENT-->
-## Mission
+### Mission
 The City of Covington is a progressive and ethical government, and as part of that we make this data freely available to the public. Access to government data is provided to increase public participation in government, to promote transparency and accountability, to increase effectiveness and efficiency in government operations, and to empower individuals and business to create jobs and new industries that improve Covington residents' quality of life.
 
 <!-- HOW TO USE SITE -->
-## Usage
+### Usage
