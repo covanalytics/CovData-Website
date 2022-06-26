@@ -42,7 +42,7 @@ This is a list of the major technologies, frameworks, and plug-ins that have bee
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
 * [Angular](https://angular.io/)
-* [Ajax])(https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)
+* [Ajax](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)
 * [DataTables.js](https://datatables.net/)
 
 
