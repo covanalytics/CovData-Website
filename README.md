@@ -19,6 +19,7 @@ The open data hub can be accessed at [data.covingtonky.gov](http://data.covingto
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
+&nbsp
 
 ![covdata](https://user-images.githubusercontent.com/24296075/175827245-980975ac-e992-4023-be4a-f026d26bb459.PNG)
 
