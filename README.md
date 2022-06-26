@@ -50,11 +50,9 @@ This is a list of the major technologies, frameworks, and plug-ins that have bee
 <!-- ROADMAP -->
 ## Roadmap
 
-- [X] Update Maps/Apps Section
+- [X] Update Web Maps/Apps Section
 - [ ] Overhaul Dashboards
 - [ ] Add Quartlery Data Stories
-- [ ] Add "components" document to easily copy & paste sections of the readme
-
 
 ## Contact
 
