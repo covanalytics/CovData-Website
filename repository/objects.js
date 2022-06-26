@@ -1,4 +1,4 @@
-
+{
   "data": [
      {
       "dataset": "Police Responses",
@@ -15,8 +15,5 @@
 	    "reportOriginal": "https://drive.google.com/uc?export=download&id=0BxZjyP_Xfv7ceU1kRUpyZ0dWNHM", 
 	    "reportInfo": "This report provides the official summary context for this COVDATA dataset.  For an interactive visualization of this dataset, please check out our <a class='dashboard' href='http://data.covingtonky.gov/Dashboards/PublicSafety/PoliceRuns/'>dashboard.</a>"
     },
-    { NewDataSet:
-      
-    },
   ]
-
+}
