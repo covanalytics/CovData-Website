@@ -30,4 +30,5 @@ Data-driven government begins with timely, reliable, consistent, high-quality da
 ## Mission
 The City of Covington is a progressive and ethical government, and as part of that we make this data freely available to the public. Access to government data is provided to increase public participation in government, to promote transparency and accountability, to increase effectiveness and efficiency in government operations, and to empower individuals and business to create jobs and new industries that improve Covington residents' quality of life.
 
-
+<!-- HOW TO USE SITE -->
+## Usage
