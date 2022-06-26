@@ -35,7 +35,7 @@ The City of Covington is a progressive and ethical government, and as part of th
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This is a list of the major technologies and frameworks used to create the Open Data platform.
 
 * [HTML](https://html.spec.whatwg.org/multipage/#toc-references)
 * [Bootstrap](https://getbootstrap.com)
