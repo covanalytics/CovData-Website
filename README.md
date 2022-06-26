@@ -4,7 +4,7 @@
 
 **COVDATA** is the City of Covington's open data hub to find facts, figures, and maps related to life within the city. We are working diligently to improve this platform to support the publication of the City's data and to make this data easy to find and access.
 
-The Data Hub can be accessed at [data.covingtonky.gov](http://data.covingtonky.gov/)
+The open data hub can be accessed at [data.covingtonky.gov](http://data.covingtonky.gov/)
 
 <!-- TABLE OF CONTENTS -->
 <details>
