@@ -1,3 +1,12 @@
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!--dataTables-->
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+
 /* Formatting function for row details */
 function format ( d ) {
     // `d` is the original data object for the row
