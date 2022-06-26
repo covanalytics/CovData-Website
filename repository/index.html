@@ -1,1 +1,401 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Todd Sink, City of Covington">
+	<link rel="SHORTCUT ICON" href="../../img/favicon-2014.ico" type="image/x-icon">
+
+    <title>Data Repository</title>
+
+		
+	<!-- Font-Awesome Icons link -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+	<!--DataTables CSS-->
+	<link href="dataTables.css" rel="stylesheet">
+	 
+<style>
+td a.dataset {
+	color:#fff;
+	text-decoration:none!important;
+	background-color: #893cdb;
+	padding: 4px;
+	border-radius: 3px;}
+
+td a.report {
+	color:#fff;
+	text-decoration:none!important;
+	background-color: #548300;
+	padding: 4px;
+	border-radius: 3px;}
+	
+td.row-align {
+	vertical-align: top;
+}
+td.details-control {
+    background: url('details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('details_close.png') no-repeat center center;
+}
+
+#container{  
+    margin: auto;
+    text-align:center;
+	padding:10px;
+}	
+#department-dropdown, #year-dropdown, #division-dropdown, #format-dropdown{
+	padding:3px;
+	border-radius: 4px;
+	background-color:#ffe4a2;	
+	}
+
+.navbar-inverse {
+    background-color: #f1f1f1;
+	color:black;
+}	
+.navbar-text{
+	float: none;
+}
+.navbar-inverse a{
+	color:black;
+	font-weight:normal;
+}
+.navbar-inverse a:hover{
+	color:#46b5d2;
+}
+.navbar-inverse .navbar-text {
+    color: black;
+}
+
+.dashboard, .dashboard:hover {
+	color:#46b5d2;
+	font-weight:bold;
+	text-decoration: none;
+	background-color:#ffe4a2;
+	padding:2px;
+}
+
+</style>	
+	
+<script>
+  (function(i,s,o,g,r,a,m){
+	i['GoogleAnalyticsObject']=r;
+	i[r]=i[r]||
+		function(){
+			(i[r].q=i[r].q||[]).push(arguments)
+			},i[r].l=1*new Date();
+			a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];
+			a.async=1;
+			a.src=g;
+			m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105476324-1', 'auto');
+  ga('send', 'pageview');
+    
+</script>
+ 
+
+
+<!-- Google Tag Manager -->
+<!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KNBR74Z');</script>-->
+<!-- End Google Tag Manager -->
+	
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNBR74Z"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+   <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+                </button>
+                <!--<a class="navbar-brand page-scroll" href="">Cov Data</a>-->
+				 <a class="navbar-brand page-scroll">
+				 <span class="logo" style="color:#46b5d2;font-weight:bold">COV<span style="color:black;font-weight:bold">DATA</span></span>
+				 </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href=""></a>
+                    </li>
+                   <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="https://drive.google.com/open?id=0BxZjyP_Xfv7cUXZDUk1BMEJKWWM" target="_blank" >User Guide</a></li>
+						</ul>
+					</li>
+					<li><a href="../TermsOfUse">Terms of Use</a></li>
+                    <!--<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Financials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://covingtonky.opengov.com/transparency" target="_blank">OpenGov Platform</a></li>
+							<li><a href="https://s3.amazonaws.com/delphius-rds-1/file_uploader/files/attacheds/000/040/933/original/User_Guide.pdf?1463486249" target="_blank">OpenGov User Guide</a></li>                         
+                            <li><a href="http://www.covingtonky.gov/Portals/covingtonky/Documents/Financials/document.pdf" target="_blank">Covington Transparency Ordinance</a></li>       
+						</ul>	
+					</li>-->
+                    <!--<li><a href="">CovStat</a></li>-->
+                    <!--<li><a href="">Tools</a></li>-->
+					<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Contact<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="mailto:tsink@covingtonky.gov">Email</a></li>
+							<li><a href="https://goo.gl/forms/tmp7Pt7ZNPsmd4wA3" target="_blank">Feedback</a></li>
+						</ul>
+					</li>
+					
+					<li>
+                        <a href="https://www.facebook.com/covingtonkygov/"><i class="fa fa-facebook fa-fw fa-1x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/covingtonkygov?lang=en"><i class="fa fa-twitter fa-fw fa-1x"></i></a>
+                    </li>
+					<li>
+                        <a href="https://www.instagram.com/covingtonkygov/"><i class="fa fa-instagram fa-fw fa-1x"></i></a>
+                    </li>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Page Content -->
+    
+<h1></h1>
+
+
+<div id='container'>
+	<select id="format-dropdown">
+		<option value="">All Formats</option>
+		<option value="Datasets">Datasets</option>
+		<option value="Files & Documents">Files & Documents</option>
+		<option value="Charts">Charts</option>
+		<option value="Map">Maps</option>
+		<option value="Forms">Forms</option>
+				
+	</select>
+	<!--<select id="type-dropdown">
+		<option value="">All Types</option>
+		<option value="Dataset">Datasets</option>
+		<option value="File Document">File Documents</option>
+	</select>-->
+	<!--<select id="department-dropdown">
+		<option value="">All Departments</option>
+		<option value="City Manager">City Manager</option>
+		<option value="Development">Development</option>
+		<option value="Finance">Finance</option>
+		<option value="Fire">Fire</option>	
+		<option value="Police">Police</option>	
+	</select>-->
+	<select id="division-dropdown">
+		<option value="">All Divisions</option>
+		<optgroup label="City Manager's Office">
+			<option value="Internal Auditor">Internal Auditor</option>
+			<option value="Data Analytics">Data & Analytics </option>
+		</optgroup>
+		<optgroup label="Neighborhood Services">
+			<option value="Community Development">Community Development</option>
+			<option value="Solid Waste & Recycling">Solid Waste & Recycling</option>
+		</optgroup>
+		<optgroup label="Economic Development">
+			<option value="Economic Development">Economic Development</option>
+		</optgroup>
+		<optgroup label="Finance Dept.">
+			<option value="Finance">Finance</option>
+		</optgroup>	
+		<optgroup label="Public Works">
+			<option value="Urban Forestry">Urban Forestry</option>
+		</optgroup>	
+		<optgroup label="Fire Dept.">
+			<option value="Fire">Fire</option>
+		</optgroup>
+		<optgroup label ="Police Dept.">
+			<option value="Police">Police</option>
+		</optgroup>
+	</select>
+	<select id="year-dropdown">
+		<option value="">All Years</option>
+		<option value="2019">2019</option>
+		<option value="2018">2018</option>
+		<option value="2017">2017</option>
+		<option value="2016">2016</option>
+		<option value="2015">2015</option>
+		<option value="2014">2014</option>
+		<option value="2013">2013</option>
+		<option value="2012">2012</option>
+	</select>
+</div>
+<table id="covdata" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Content</th>
+                <!--<th>Type</th>-->
+                <th>Division</th>   
+				<th>Year</th> 
+				<th>Download</th> 
+            </tr>
+        </thead>
+        
+    </table>
+	<br />
+	<br />
+	
+    <!-- /.container -->
+  <!--Footer-->
+<footer class="container">
+	
+
+    <!--Copyright-->
+    <div class="footer navbar-inverse">
+        <div class="container-fluid">
+		<div class="row">
+			<div class="small navbar-text text-center">
+				<a href="http://data.covingtonky.gov">Home</a>
+				|				
+				<a href="../../TermsOfUse">Terms of Use</a>
+				|
+                <a href="https://www.facebook.com/covingtonkygov/"><i class="fa fa-facebook fa-fw fa-1x"></i></a>
+                    
+                <a href="https://twitter.com/covingtonkygov?lang=en"><i class="fa fa-twitter fa-fw fa-1x"></i></a>
+                
+				<a href="https://www.instagram.com/covingtonkygov/"><i class="fa fa-instagram fa-fw fa-1x"></i></a>
+							   
+				<br />
+				© 2017 City of Covington
+			</div>
+		</div>	
+        </div>
+    </div>
+</div>	
+    <!-- /.container -->
+	
+	<!-- jQuery -->
+	<script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+	
+	<!--dataTables-->
+	<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+		
+	<script>
+/* Formatting function for row details */
+function format ( d ) {
+    // `d` is the original data object for the row
+    return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+        '<tr>'+
+            '<td>Year:</td>'+
+            '<td>'+d.year+'</td>'+
+        '</tr>'+
+		'<tr>'+
+            '<td>Format:</td>'+
+            '<td>'+d.format+'</td>'+
+        '</tr>'+
+		'<tr>'+
+            '<td>Summary Report:</td>'+
+            '<td>'+'<a class="report" href = "' + d.reportURL  + '" onclick="ga(\'send\', \'event\', \'Summaries\', \'Download Summary\', \'' + d.dataset + '\');">' + d.reportFormat + '</a>' + " " + d.reportInfo + '</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td>Dataset:</td>'+
+        '<td>' + '<a class="dataset" href = "' + d.url + '" onclick="ga(\'send\', \'event\', \'Datasets\', \'Download Dataset\', \'' + d.dataset + '\');">' + d.download + '</a>' + '</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td class="row-align">Description:</td>'+ 
+            '<td class="row-align">'+d.description+'</td>'+
+        '</tr>'+
+    '</table>';
+}
+ 
+$(document).ready(function() {
+    var table = $('#covdata').DataTable( {
+	    
+		responsive: true,
+        "ajax": "objects.js",
+        "columns": [
+            {
+             "className":      'details-control',
+             "orderable":      false,
+             "data":           null,
+             "defaultContent": ''
+            },
+            { "data": "dataset" },
+            { "data": "division" },
+			{ "data": "year"},
+			{ "data": "format", "visible" : false }         
+        ],
+		
+		 "order":[[2, 'asc'], [1, 'asc'], [3, 'desc']], 
+		
+		"language": {
+            "lengthMenu": "Display _MENU_ files per page",
+            "zeroRecords": "Nothing found matching the selection - sorry",
+            "info": "Showing  _START_-_END_  of _TOTAL_ files",
+            "infoEmpty": "No files available",
+            "infoFiltered": "(filtered from _MAX_ total files)"		
+        },		
+    } );
+	
+	//Add event listeners for filtering
+     //$('#type-dropdown').on('change', function () {
+                   // table.columns(2).search( this.value ).draw();
+                //} ); 
+	//Filtering on a hidden column here
+	$('#format-dropdown').on('change', function () {
+                    table.columns(4).search( this.value ).draw();				
+                } );			
+	//$('#department-dropdown').on('change', function () {
+                   // table.columns(3).search( this.value ).draw();
+               // } );
+	$('#division-dropdown').on('change', function () {
+                    table.columns(2).search( this.value ).draw();
+                } );			
+    $('#year-dropdown').on('change', function () {
+                    table.columns(3).search( this.value ).draw();
+                } );       
+				
+    // Add event listener for opening and closing row details
+    $('#covdata tbody').on('click', 'td.details-control', function () {
+        var tr = $(this).closest('tr');
+        var row = table.row( tr );
+ 
+        if ( row.child.isShown() ) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+        }
+        else {
+            // Open this row
+            row.child( format(row.data()) ).show();
+            tr.addClass('shown');
+        }
+    } );
+} );
+</script>
+</body>
+
+</html>
