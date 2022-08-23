@@ -52,8 +52,8 @@ This is a list of the major technologies, frameworks, and plug-ins that have bee
 ## Roadmap
 
 - [X] Update Web Maps/Apps Section
-- [ ] Overhaul Data Dashboards
-- [ ] Add Quartlery Data Stories
+- [X] Overhaul Data Dashboards
+- [X] Add Data Shorts
   - [ ] Provide Opportunities for Community Suggestions
 
 ## Contact
